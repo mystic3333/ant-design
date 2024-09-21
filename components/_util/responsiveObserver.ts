@@ -12,7 +12,7 @@ export const responsiveArray: Breakpoint[] = ['xxl', 'xl', 'lg', 'md', 'sm', 'xs
 type SubscribeFunc = (screens: ScreenMap) => void;
 
 const getResponsiveMap = (token: GlobalToken): BreakpointMap => ({
-  xs: `(min-width: ${token.screenXSMax}px)`,
+  xs: `(max-width: ${token.screenXSMax}px)`,
   sm: `(min-width: ${token.screenSM}px)`,
   md: `(min-width: ${token.screenMD}px)`,
   lg: `(min-width: ${token.screenLG}px)`,
